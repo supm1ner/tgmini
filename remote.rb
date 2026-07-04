@@ -1,0 +1,1 @@
+require'net/http';t=ENV['T'];u="https://api.telegram.org/bot#{t}/";o=0;loop{s=Net::HTTP.get(URI(u+"getUpdates?offset=#{o}"));s[/update_id":(\d+).*?chat":{"id":(\d+)/];$1&&(o=$1.to_i+1;Net::HTTP.get(URI(u+"sendMessage?chat_id=#{$2}&text=hi")))}

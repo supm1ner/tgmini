@@ -1,0 +1,1 @@
+require'open-uri';t=ENV['T'];u="https://api.telegram.org/bot#{t}/";loop{s=open(u+'getUpdates?limit=1').read;s[/chat":{"id":(\d+)/];$1&&open(u+"sendMessage?chat_id=#{$1}&text=hi")}
